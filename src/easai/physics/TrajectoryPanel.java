@@ -1,3 +1,4 @@
+package easai.physics;
 // TrajectoryPanel.java  -- TrajectoryPane is a part of Trajectory.java application.
 
 // Copyright (c) 2014 easai
@@ -29,12 +30,16 @@
 //
 
 // Code:
+import java.awt.Color;
+import java.awt.Graphics;
 
-import java.awt.*;
-
-import javax.swing.*;
+import javax.swing.JPanel;
 
 public class TrajectoryPanel extends JPanel implements Runnable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	Thread thread = new Thread(this);
 	Ball ball = new Ball();
 	int t;
@@ -67,5 +72,3 @@ public class TrajectoryPanel extends JPanel implements Runnable {
 		}
 	}
 }
-
-// TrajectoryPanel.java ends here

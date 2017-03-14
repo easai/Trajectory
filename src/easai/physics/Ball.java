@@ -1,3 +1,4 @@
+package easai.physics;
 // Ball.java  -- Ball class for Trajectory.java
 
 // Copyright (c) 2014 easai
@@ -29,8 +30,9 @@
 //
 
 // Code:
-
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Point;
 
 public class Ball {
 	Point pos = new Point(0, 0);
@@ -53,5 +55,3 @@ public class Ball {
 		pos.y = (t - 7) * (t - 7) * scaleY;
 	}
 }
-
-// Ball.java ends here

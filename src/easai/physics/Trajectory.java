@@ -1,3 +1,4 @@
+package easai.physics;
 // Trajectory.java  -- Trajectory is a Java application that draws parabolic trajectory of an object that is thrown out.
 
 // Copyright (c) 2014 easai
@@ -29,10 +30,13 @@
 //
 
 // Code:
-
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class Trajectory extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	TrajectoryPanel panel = new TrajectoryPanel();
 
 	Trajectory() {
@@ -44,7 +48,7 @@ public class Trajectory extends JFrame {
 	}
 
 	public static void main(String args[]) {
-		Trajectory trajectory = new Trajectory();
+		new Trajectory();
 	}
 }
 
