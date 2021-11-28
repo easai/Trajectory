@@ -65,7 +65,7 @@ public class TrajectoryPanel extends JPanel implements Runnable {
 			ball.move(t);
 			repaint();
 			try {
-				Thread.sleep(100);
+				Thread.sleep(150);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
